@@ -1,0 +1,51 @@
+/********
+    Template:
+        small-spacing : 5px
+        big-spacing : 10px
+        light-neutral-colour : #CDCDCD
+        dark-neutral-colour : #343434
+        bright-colour: #356915
+*********/
+
+/**********************
+    Form Styling 
+**********************/
+
+#reports_filter_form {
+    background-color: #CDCDCD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #343434;
+}
+
+#reports_filter_form label, select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/**********************
+    Table Styling 
+**********************/
+#results {
+    width: 100%;
+}
+
+#results thead th {
+    background-color: #CDCDCD;
+}
+
+#results tbody {
+    width: 100%;
+}
+
+tbody td {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #CDCDCD;
+    padding: 5px;
+    text-align: center; /*addition to maintain inline with headers*/
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ACS Final Group Project - Reports</title>
+		<script src="../TimeTrackerApi.js"></script>
+		<script src="../config.js"></script>
+		<script src="Reports.js"></script>
+		<script src="init.js"></script>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../errors.css" />
+		<link rel="stylesheet" href="reports.css" />
+		<link rel="stylesheet" href="../ux.css" /> <!--Added the ux.css in order to make UX improvements-->
+	</head>
+	<body>
+		<header>
+			<div id="header_title">Time Tracker</div>
+			<nav>
+				<a title="Track" class="" href="../track/index.html">Track</a>
+				<a title="Report" class="current_menu" href="../reports/index.html">Reports</a>
+				<a title="Projects" class="" href="../projects/index.html">Projects</a>
+			</nav>
+
+		</header>
+		<div id="content_container">
+
+			<h1>Reports</h1>
+			<!-- FILTER FORM, selects project_id and user_id are populated with their respected values-->
+			<form id="reports_filter_form">
+				<label for="project_id">Project:</label>
+				<select name="project_id" id="project_id">
+					<option value="">All Projects</option>
+				</select>
+				<label for="user_id">User:</label>
+				<select name="user_id" id="user_id">
+					<option value="">All Users</option>
+				</select>
+			</form>
+
+			<!-- TIME ENTRIES TABLE, The empty table with the head already filled in -->
+			<table id="results">
+				<thead>
+					<tr>
+						<th class="result_task">Task</th>
+						<th class="result_project">Project</th>
+						<th class="result_user">User</th>
+						<th class="result_time">Time</th>
+						<th class="result_date">Date</th>
+					</tr>
+				</thead>
+				<!-- Table body populated with values relating to active selection -->
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

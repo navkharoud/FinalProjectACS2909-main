@@ -1,0 +1,67 @@
+/********
+    Template:
+        small-spacing : 5px
+        big-spacing : 10px
+        light-neutral-colour : #CDCDCD
+        dark-neutral-colour : #343434
+        bright-colour: #356915
+*********/
+
+/************************
+    TRACK FORM STYLES
+*************************/
+#timer_container a {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#track_form {
+    margin-bottom: 10px;
+    background-color: #CDCDCD;
+    color: #343434;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/************************
+      BUTTON STYLES
+************************/
+
+#timer_container a:hover {
+    opacity: 80%;
+}
+
+#start_button {
+    background-color: #009900;
+}
+
+#stop_button {
+    background-color: #990000;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: flex;
+}
+
+/************************
+      COUNTER STYLES
+************************/
+
+#counter{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 80px;
+}

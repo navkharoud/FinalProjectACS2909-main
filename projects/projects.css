@@ -1,0 +1,68 @@
+/*
+    NEW PROJECT BUTTON
+*/
+#new_project_button{
+    font-size: 28px;
+    align-content: center;
+    padding: 10px;
+    background-color: #009900;
+    border: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#new_project_button:hover{
+    opacity: 80%;
+
+}
+
+/*
+    PROJECTS TABLE STYLING
+*/
+#projects_table{
+   width: 100%;
+}
+#projects_table th{
+    background-color: #CDCDCD;
+}
+#projects_table td{
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid  #CDCDCD;
+    text-align: center;
+    padding: 5px;
+}
+/*
+    FORM STYLING
+*/
+#project_form{
+    position: fixed; /*-- if you want it to be 100px from the top of the window */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    top: 100px;
+    background-color: #343434;
+}
+
+#project_form input {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#submit_button{
+    background-color: #CDCDCD;
+    border: none;
+    align-content: center;
+    color: #343434;
+    cursor: pointer;
+}
+
+/* 
+   HIDING FORMS
+   if using classList in js to make css changes 
+*/
+.hide {
+    display: none !important;
+}
+
+

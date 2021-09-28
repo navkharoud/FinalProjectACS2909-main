@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ACS Final Group Project - Track</title>
+		<script src="../TimeTrackerApi.js"></script>
+		<script src="../config.js"></script>
+		<script src="Track.js"></script>
+		<script src="init.js"></script>
+		<link rel="stylesheet" href="../main.css" />
+		<link rel="stylesheet" href="../errors.css" />
+		<link rel="stylesheet" href="track.css" />
+		<link rel="stylesheet" href="../ux.css" /> <!--Added the ux.css in order to make UX improvements-->
+	</head>
+	<body>
+
+		<header>
+			<div id="header_title">Time Tracker</div>
+			<nav>
+				<a title="Track" class="current_menu" href="../track/index.html">Track</a> <!-- Updated this line to link to track page instead of reports page-->
+				<a title="Report" class="" href="../reports/index.html">Reports</a>
+				<a title="Projects" class="" href="../projects/index.html">Projects</a>
+			</nav>
+
+		</header>
+		<div id="content_container">
+
+			<h1>Track</h1>
+
+			<div id="timer_container">
+				<!-- FILTER FORM, populated with project titles -->
+				<form id="track_form">
+					<label for="project_id">Project:</label>
+					<select name="project_id" id="project_id">
+						<option value="">Select a project</option>
+					</select>
+					<label for="description">Description:</label>
+					<input type="text" name="description" id="description"/>
+				</form>
+				<a href="#" id="start_button">Start</a>
+				<a href="#" id="stop_button">Stop</a>
+				<!-- COUNTER, updates constantly when the timer is running-->
+				<div id="counter"></div>
+
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+/**
+  Optional UX styling
+  -----------------------------------
+  Add any CSS that is part of the optional UX styling below
+ */
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+/**
+  This is additional styling to make the content box look less clunky
+  and follows a flat-design pattern
+*/
+#content_container {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: none !important; /* override the default border as defined in the instructions since it hinders the affect of the page separation created by the box-shadow */
+  border-radius: 4px;
+  background-color: #fff;
+  overflow-y: auto; /*allow scrolling if the content gets larger than the window*/
+  margin-bottom: 10px; /*prevent content that is too long from being hidden*/
+  margin-top: 60px !important; /* override default margin from top as defined in instructions to allow
+   content to sit below the page header which is fixed and prevents bottom of page from being cut off*/
+}
+
+#new_project_button {
+  color: white;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0,0,0,.12);
+}
+
+a {
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/**
+  Make the table look more uniform and remove the border from the last element
+*/
+
+table {
+  border-collapse: collapse;
+}
+
+#results tr td{
+  text-align: center;
+}
+
+tbody > tr:last-child > td {
+  border-bottom: none !important;
+}
+
+
+
+/**
+  Add some spaces to the track form to make things
+  look less cluttered and squished together
+  and customized the buttons to stand out
+*/
+
+#track_form {
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+#start_button {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0,0,0,.12);
+  text-transform: uppercase;
+}
+
+#stop_button {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 1px 5px 0px rgba(0,0,0,.12);
+  text-transform: uppercase;
+
+}
+
+/**
+  Customizing Hover effect on nav to show text and nav decoration
+*/
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #009900;
+}
+
+
+/* project form title changes */
+#project_form {
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#project_form input[type=submit], input[type=text] {
+  border-radius: 2px;
+  border: none;
+  border-bottom: 0.5px solid black;
+}
+
+
+#results thead th {
+  padding: 2px;
+}
+
+/* Create a fixed navigation bar */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+/**
+  JavaScript Modifications
+  -----------------------------------
+  If you made any changes to JavaScript in order to improve the UX, you must explain them below. Note that any changes
+  that break the core functionality will indeed count against the marks for that required functionality. In other words,
+  don't break something to make it cool.
+
+
+
+
+ */
